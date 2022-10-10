@@ -99,4 +99,4 @@ def check_bad_student_gpa(i,X,student_gpa_dict):
         if (100 * (4 - student_gpa_dict[student_name]) + random.randint(300, 400)) > 350 + 3 * X:
             think_bad_student_gpa.append(student_name)
     return think_bad_student_gpa
-run_bad_student(100)
+make_GPA()

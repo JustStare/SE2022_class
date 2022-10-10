@@ -1,5 +1,5 @@
-{'class_in': 'A', 'random_student_num': '8', 'all_random_student': ['A27', 'A54', 'A87', 'A61', 'A65', 'A17', 'A86', 'A33']}
-{'class_in': 'B', 'random_student_num': '8', 'all_random_student': ['B36', 'B53', 'B32', 'B31', 'B63', 'B60', 'B8', 'B3']}
-{'class_in': 'C', 'random_student_num': '7', 'all_random_student': ['C60', 'C79', 'C67', 'C17', 'C40', 'C48', 'C75']}
-{'class_in': 'D', 'random_student_num': '8', 'all_random_student': ['D50', 'D19', 'D34', 'D55', 'D7', 'D83', 'D89', 'D30']}
-{'class_in': 'E', 'random_student_num': '8', 'all_random_student': ['E84', 'E54', 'E35', 'E6', 'E65', 'E16', 'E86', 'E78']}
+{'class_in': 'A', 'random_student_num': '6', 'all_random_student': ['A85', 'A5', 'A66', 'A77', 'A54', 'A15']}
+{'class_in': 'B', 'random_student_num': '6', 'all_random_student': ['B24', 'B88', 'B33', 'B31', 'B34', 'B82']}
+{'class_in': 'C', 'random_student_num': '5', 'all_random_student': ['C86', 'C48', 'C67', 'C50', 'C1']}
+{'class_in': 'D', 'random_student_num': '6', 'all_random_student': ['D36', 'D77', 'D26', 'D68', 'D35', 'D50']}
+{'class_in': 'E', 'random_student_num': '6', 'all_random_student': ['E39', 'E19', 'E11', 'E37', 'E46', 'E32']}

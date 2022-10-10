@@ -5,19 +5,25 @@ student_dic = {}
 class_num = ['A','B','C','D','E']
 check_num = 0
 E_num = 0
-def creat_dic(probability):
-    # 一个初始概率值
+student_gpa = {}
+def creat_dic():
     global  class_num,student_dic
-
+    with open("student_gpa.data",'r') as f:
+        student_gpa = eval(f.read())
     student_name = []
+    student_P = []
     for t in range(0,5):
         for i in range(0,90):
             student_ID = class_num[t] + str(i)
             student_name.append(student_ID)
-    student_dic = dict.fromkeys(student_name,probability)
+            if student_gpa[student_ID]<= 4-X/30:
+                student_P.append(100)
+            else :
+                student_P.append(0)
+    student_dic = dict(zip(student_name,student_P))
     print(student_dic)
 
-
+## 检查函数
 def check_run(add_p,sub_p,think_bad,this_day):
     one_check_num = 0.0
     one_E_num = 0.0
@@ -42,9 +48,10 @@ def check_run(add_p,sub_p,think_bad,this_day):
     print("~~~~",one_E_num/one_check_num,one_E_num,one_check_num)
 
 if __name__ == '__main__':
-    random_run.run_bad_student()
-    creat_dic(probability)
 
+    X =int(input(":请输入逃课相关人员和GPA的关联性  ps:X的区间是(1~100)\n"))
+    random_run.run_bad_student(X)
+    creat_dic()
     for i in range(0,20):
         this_day = random_run.day_class_run()
         print(this_day)
