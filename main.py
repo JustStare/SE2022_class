@@ -6,7 +6,7 @@ class_num = ['A','B','C','D','E']
 check_num = 0
 E_num = 0
 student_gpa = {}
-def creat_dic():
+def creat_dic(T):
     global  class_num,student_dic
     with open("student_gpa.data",'r') as f:
         student_gpa = eval(f.read())
@@ -16,7 +16,7 @@ def creat_dic():
         for i in range(0,90):
             student_ID = class_num[t] + str(i)
             student_name.append(student_ID)
-            if student_gpa[student_ID]<= 4-X/30:
+            if student_gpa[student_ID]<= 4-float(X/T):
                 student_P.append(100)
             else :
                 student_P.append(0)
@@ -51,7 +51,8 @@ if __name__ == '__main__':
 
     X =int(input(":请输入逃课相关人员和GPA的关联性  ps:X的区间是(1~100)\n"))
     random_run.run_bad_student(X)
-    creat_dic()
+    T = int(input(":请输入 抽点gpa与T的相关性 T的区间是(30-50) T越大抽取人数越多\n"))
+    creat_dic(T)
     for i in range(0,20):
         this_day = random_run.day_class_run()
         print(this_day)
